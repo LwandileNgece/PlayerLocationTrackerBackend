@@ -11,7 +11,7 @@ const server = http.createServer(app);
 // Configure CORS and Socket.io
 const io = socketIo(server, {
     cors: {
-        origin: ["http://localhost:3000", "https://vercel.app", "https://*.vercel.app", "*"],
+        origin: ["https://player-location-tracker-frontend-r5gbsf6s4.vercel.app/"],
         methods: ["GET", "POST"],
         credentials: true
     },
